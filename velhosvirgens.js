@@ -80,7 +80,7 @@ for (var i = 0; i < teams.length; i++) {
 	var team = teams[i];
 	var players = "";
 	for (var j = 0; j < team.players.length; j++) {
-		players += team.players[j].tag.replace("-","#") + " <a href='https://www.overbuff.com/players/pc/" + team.players[j].tag + "'>" + team.players[j].sr + "</a><br>";
+		players += team.players[j].tag.replace("-","#") + " <a href='https://www.overbuff.com/players/pc/" + team.players[j].tag + "?mode=competitive'>" + team.players[j].sr + "</a><br>";
 	}
 	$("#ranks").append("<tr><td>"+ (parseInt(i)+1) +"</td><td>" + team.name + "</td><td>" + team.averageSr + "</td><td>" + players + "</td>");
 }
